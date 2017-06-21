@@ -278,7 +278,7 @@ extern struct lxc_config_t *lxc_getconfig(const char *key)
 
 	for (i = 0; i < config_size; i++)
 		if (!strncmp(config[i].name, key,
-			     strlen(config[i].name)))
+			     strlen(key)))
 			return &config[i];
 	return NULL;
 }
